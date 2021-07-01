@@ -69,17 +69,17 @@
 
 
 <div class="container">
-    <h2 class=" pt-5  mt-5 text-center font-weight-bolder">CUSTOM GIFTS</h2>
+    <h2 class=" text-center font-weight-bolder heading-custom ">CUSTOM GIFTS</h2>
     <div class="photos">
         <div class="row pt-5">
             <div class="col-md-4">
-                <img src="img/custom.jpg" alt="" class="w-100"> 
+                <img src="img/custom.jpg" alt="" class="w-100 mt-5"> 
             </div>
             <div class="col-md-4">
-                <img src="img/custom.jpg" alt="" class="w-100"> 
+                <img src="img/custom.jpg" alt="" class="w-100 mt-5"> 
             </div>
             <div class="col-md-4">
-                <img src="img/custom.jpg" alt="" class="w-100 "> 
+                <img src="img/custom.jpg" alt="" class="w-100 mt-5 "> 
             </div>
             <div class="col-md-4">
                 <img src="img/custom.jpg" alt="" class="w-100 mt-5"> 
@@ -99,30 +99,35 @@
     </div>
 
 
-    <div class="row">
+   
+        <form  class="form-group">
+          <div class="col-md-8 mb-3 m-auto w-100 ">
+            <label for="validationDefault01">First name</label>
+            <input type="text" class="form-control" id="validationDefault01"  required>
+          </div>
+          <div class="col-md-8 mb-3 m-auto ">
+            <label for="validationDefault02">Last name</label>
+            <input type="text" class="form-control" id="validationDefault02" required>
+          </div>
+        <div class="col-md-8 m-auto">
+            <label for="inputAddress">Email</label>
+            <input type="email" class="form-control" id="inputAddress">
+          </div>
 
-        <div class="form-content-us">
-            
-            <form >
-            
-                <input type="text" placeholder="First Name"  class="name" required data-error="sakr"> 
+          <div class="col-md-8 m-auto">
+            <label for="inputAddress">Phone number</label>
+            <input type="number" class="form-control" id="inputAddress" >
+          </div>
         
-                <input type="text" placeholder="Last Name"class="email" required>
-               
-                <input type="number" placeholder="Phone number" class="subject mt-5" required>
-        
-                <input type="email" placeholder="email" class="subject mt-5" required>
-        
-                <textarea name="" placeholder="Message for me " class="Message mt-5"></textarea>
-            
-                 <input type="submit" value="SEND MESSAGE"  class="btn-contect mt-4">
-            
-            </form>
-            
-            </div>
-    </div>
+    <div class="mb-3 col-md-8 m-auto">
+        <label for="validationTextarea">Message for me</label>
+        <textarea class="form-control " id="validationTextarea"  required></textarea>
+        <button class="btn btn-contect mt-4" type="submit">SEND MESSAGE</button>
+      </div>
+
+</form>
+
 </div>
-
 <footer class="" id="footer">
     <div class="bg-main-color">
     <section class=" container-fluid row  p-5">
@@ -178,6 +183,8 @@
                     <li class="footer-list"><a href="" class="text-white">Corporate Gifts</a></li>
                     <li class="footer-list"><a href="" class="text-white">Gift Registry</a></li>
                     <li class="footer-list"><a href="" class="text-white">Shipping & Returns</a></li>
+                    <li class="footer-list"><a href="indexOrderTrack.html" class="text-white">Order Tracking</a></li>
+
                 </ul>
             </div>
         </div>
