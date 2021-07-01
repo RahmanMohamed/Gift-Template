@@ -89,7 +89,7 @@ a
 
 i
 {
-    color: wheat;
+    /* color: wheat; */
 }
 
 html, body{
@@ -111,10 +111,30 @@ header{
 
 header nav{
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
-    background: #222;
+    background: #DA8886;
     padding: 6px 50px;
+}
+/* header nav{
+    display: block;
+    background: #222;
+    
+    padding-bottom: 5%;
+} */
+/* header nav .cartCount{
+    float:right;
+    overflow: hidden;
+    margin-top:1% ;
+    padding: 10px 30px;
+    background: rgb(8, 12, 8);
+    margin-right: 2%;
+    text-decoration: none;
+   
+} */
+header nav .brand {
+    font-size: 38px;
+    font-weight: bold;
 }
  
 header nav a{
@@ -124,12 +144,19 @@ header nav a{
 header nav a:hover{
     color: #fff;
     text-decoration: none;
+    
+}
+header nav .cartCount:hover{
+    color: #fff;
+    text-decoration: none;
+    border:  solid 1px white;
+    border-radius: 2px;
 }
 
 header nav a.cartCount{
     padding: 10px 30px;
-    background: rgb(8, 12, 8);
-    border:  dotted 2px lime;
+  
+   
 }
 
 header nav a sup{

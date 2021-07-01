@@ -235,12 +235,13 @@
             
           </div>
       </div>
-      <!-- chat box -->
-      <div class="wrapper">
+       <!-- chat box -->
+       <div class="wrapper">
         <div class="parent">
             <!-- chat -->
             <div class="chat-box" id="chat-box">
-                <span class="close" onclick="closeChat()"><i class="far fa-times-circle"></i></span>
+                <!-- <span class="close" onclick="closeChat()"><i class="far fa-times-circle"></i></span> -->
+                <span class="close"><i class="far fa-times-circle"></i></span>
                 <div class="avatar"></div>
                 <p class="username">MARCIA GARICIA</p>
                 <div class="dots">
@@ -253,16 +254,19 @@
                 </div>
                 <div class="fooooorm">
                     <textarea  placeholder="Send Maria a message ..." id="msg"></textarea>
-                    <button class="send-btn" onclick="sendMsg()">Send</button>
+                    <!-- <button class="send-btn" onclick="sendMsg()">Send</button> -->
+                    <button class="send-btn">Send</button>
                 </div>
               
             </div>
               <!-- message button -->
-              <div class="msg-btn" onclick="openMsgBox()">
+              <!-- <div class="msg-btn" onclick="openMsgBox()">   -->
+              <div class="msg-btn" id="msg-btn">  
                 <i class="fas fa-comment-alt" aria-hidden="true"></i>
             </div>
         </div>
       </div>
+      <!-- chatbox end -->
       <!-- footer -->
        <!-- start footer section -->
     <footer class="" id="footer">
@@ -313,7 +317,7 @@
                 <div class="">
                     <h4 class="py-3 font-weight-normal  text-white">Customer Care</h4>
                     <ul class="list-group list-unstyled ">
-                        <li class="footer-list"><a href="aboutUs.html" class="text-white">Visit Us</a></li>
+                        <li class="footer-list"><a href="contact.html" class="text-white">Visit Us</a></li>
                         <li class="footer-list"><a href="aboutUs.html" class="text-white">Our Story</a></li>
                         <li class="footer-list"><a href="" class="text-white">Press</a></li>
                         <li class="footer-list"><a href="" class="text-white">Corporate Gifts</a></li>
@@ -377,6 +381,7 @@
      <i  class="fab fa-accessible-icon cogWheel pr-1" id="cogWheel"></i></span>
      
  </div>
+ 
  <div id="handicapOptions" class="">
      <section class="accessSec">
          <p>Accessibility Menu</p>

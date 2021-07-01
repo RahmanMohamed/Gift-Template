@@ -6,8 +6,9 @@
  .wrapper
  {
      position: fixed;
-     bottom: 15%;
-     right: 5%;
+     bottom: 30%;
+     right: 1%;
+     z-index: 100;
     
  }
   /* styling parent */ 
@@ -34,6 +35,7 @@
      position: absolute;
      right: 0px;
      bottom: 0px;
+     z-index: 80;
      margin-top: 0px;
      transition-delay: 0;
      box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
@@ -46,7 +48,7 @@
 /* styling our chat box */
 .chat-box
 {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     background-color: #8d1454;
@@ -55,12 +57,13 @@
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
     text-align: center;
     position: relative;
+    z-index: 80;
     /* height: auto; */
     height: 450px;
     width: 200px;
     top: 60px;
     overflow: hidden;
-    clip-path: circle(0% at 90% 95%);
+    /* clip-path: circle(0% at 90% 95%); */
     
     
     transition: clip-path 0.5 ease-in-out ;
@@ -79,7 +82,7 @@
 /* styling image*/
 .avatar
 {
-    background-image: url(../images/client-4.png);
+    background-image: url(../img/client-5.png);
     height:120px ;
     width: 120px;
     background-position: center;
@@ -89,6 +92,7 @@
     padding: 10px;
     border: 4px solid white;
     margin-top: 20px;
+    margin-left: 15%;
 }
 /* styling userName */
 .username
