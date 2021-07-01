@@ -1,0 +1,406 @@
+/* contactHeader */
+.contact
+{
+    padding: 100px 0 92px 0;
+    background-color: transparent;
+    background-image: url(../images/3.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.contactTitle
+{
+    font-size: 60px;
+    line-height: 1.2;
+    margin-bottom: 0px;
+    letter-spacing: 5px;
+    color: #222222;
+    position: relative;
+}
+.contactOvaly
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-color: rgba(255, 255, 255, 0.7);
+    
+}
+.contact::after ,
+.contact::before 
+{
+    position: absolute;
+    content: "";
+    height: 80px;
+    width: 65%;
+    
+    background-color: #8d1454;
+    z-index: -1;
+}
+.contact::before 
+{
+    right: -30px;
+    left: auto;
+    top: -30px;
+}
+.contact::after 
+{
+    left: -30px;
+    right: auto;
+    bottom: -30px;
+}
+.contactSection
+{
+    padding: 100px 0px;
+}
+
+.contactHeader
+{
+    margin-bottom: 118px;
+}
+/* contactBody */
+
+.icon
+{
+   width: 60px;
+   height: 60px;
+   background-color:#8d1454;
+   color: white;
+   font-size: 26px;
+   border-radius: 0 10px 0 10px;
+   
+}
+.titleText
+{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 20px;
+    cursor: pointer;
+    
+}
+.titleText a
+{
+    font-size: 50px;
+    font-weight: 400;
+    color: #222222;
+    text-decoration: underline #222222 solid;
+    
+}
+.title
+{
+    font-size: 50px;
+    font-weight: 400;
+    
+}
+.contactInfo p
+{
+    margin-top: 25px;
+    margin-bottom: 0;
+    color: #72706A;
+
+}
+.contactInfo
+{
+    margin: 0px 55px 55px 0px;
+    
+}
+.contactInfoDetails
+{
+    margin-bottom: 120px;
+    
+}
+.contactAddress
+{
+    margin-bottom: 40px;
+}
+.contactAddress ul li
+{
+    list-style-type: none;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #72706A;
+    
+}
+.contactAddress ul  , 
+.contactSocial ul
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+.contactSocial ul li
+{
+    list-style-type: none;
+    display: inline-block;
+    margin: 3px 10px;
+   
+}
+.contactSocial ul li a
+{
+    font-size: 22px;
+    color:#8d1454;
+    display: inline-block;
+    /* padding: 0px 10px; */
+
+}
+.contactSocial ul li a ,
+.contactSocial ul li a:hover,
+.contactSocial ul li a:focus,
+.contactSocial ul li a:active
+{
+    text-decoration: none; 
+}
+
+.googleMap
+{
+    position: relative;
+    background-color: #8d1454;
+    padding: 30px;
+    border-radius: 0px 50px 0px 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+   
+}
+.mapImg1 , .mapImg2
+{
+    position: absolute;
+    z-index: 1;
+}
+.mapImg1
+{
+    left: -36px;
+    top: -100px;
+}
+.mapImg2
+{
+    right: -35px;
+    bottom: -100px;
+}
+
+.map
+{
+    height: 500px;
+    width: 100%;
+    /* background-color: turquoise; */
+    border-radius: 0px 50px 0px 50px;
+    z-index: 9;
+    box-shadow: 0px 5px 10px #8d1454;
+    transform: rotate(20deg );
+
+
+}
+.map iframe
+{
+    border-radius: 0px 50px 0px 50px;  
+}
+
+/*contactForm*/
+.contactForm
+{
+    margin-bottom: 115px;
+}
+.contactFormBox label
+{
+    color: #72706A ;
+}
+
+.contactFormBox input[type="text"]:focus,
+.contactFormBox input[type="email"]:focus,
+.contactFormBox textarea:focus
+ {
+    border-color: #8d1454;
+}
+.contactFormBox input ,
+.contactFormBox textarea
+{
+    margin-bottom: 30px;
+    color: #72706A  !important;
+    
+}
+.contactBtn button
+{
+    background-color: #8d1454;
+    color: #fff;
+    display: inline-block;
+    padding: 12px 30px;
+    text-align: center;
+    border: none;
+    border-radius: 0px 30px 0px 30px;
+    transition: all 0.3s ease-in !important;
+    margin-left: 12px
+}
+.contactBtn button:hover
+{
+    background-color: #F8CCF8;
+}
+
+@media screen and (max-width:1200px) 
+{
+    .title
+{
+    font-size: 38px;
+}
+}
+.notComplet
+{
+    position: relative;
+    top: 50px;
+    left: -160px;
+}
+
+
+/**************************TEAM SECTION********************************/
+.teamSection
+{
+    padding: 100px 0px 0px;
+}
+.headerTitle h1
+{
+    font-size: 60px;
+    line-height: 1.2;
+    margin-bottom: 0px;
+    color: #222222;
+}
+.headerTitle p
+{
+    margin-top: 1rem;
+    color: #72706A;
+}
+.teamHeader ,
+.teamBody 
+
+{
+    margin-bottom: 64px;
+}
+.footerContain h2
+{
+    font-size: 38px;
+    color: #222222;
+    margin-bottom: 30px;
+}
+.footerDetails
+{
+    padding: 6rem 0;
+    background-color: #DA8886;
+   
+}
+.footerBtn
+{
+    background-color: #8d1454;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 4px;
+    text-decoration: none;
+    
+}
+.footerDetails a
+{
+    text-decoration: none;
+    transition: all 0.3s;
+    
+}
+.footerDetails a:hover
+{
+ color: white;
+}
+
+/*********************************/
+
+.picBox
+{
+    width: 150px;
+    height: 150px;
+    /* border-radius: 50%; */
+    cursor: pointer;
+    
+}
+
+
+.pic img
+{
+   
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    opacity: .5;
+    position: relative;
+    z-index: 11111111111111111111111;
+   
+}
+
+.slick-slide
+{
+    height: inherit;
+    
+    /* background-color: rgb(175, 171, 168); */
+}
+.slick-center img
+{
+    opacity: 1;
+    box-shadow: rgba(129, 64, 128, 0.50) 3px 3px 4px;
+}
+
+.slick-active
+{
+    width: 130px;
+    height: 150px;
+    
+}
+
+.teamName h2
+{
+    font-size: 25px;
+    color: #222222;
+}
+.details p
+{
+    color: #72706A;
+    padding-top: 10px;
+}
+
+
+@media screen and (max-width:1199px) and (min-width:991px)
+{
+    .teamMember .container
+    {
+       width: 65% !important; 
+    } 
+}
+@media screen and (max-width:991px) and (min-width:768px)
+{
+    .teamMember .container
+    {
+       width: 80% !important; 
+    }  
+}
+@media screen and (min-width: 500px)
+{
+    .teamMember .container
+    {
+       width: 100% !important; 
+    } 
+}
+
+
+/*********************chatBox***************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

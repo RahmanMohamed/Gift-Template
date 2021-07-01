@@ -1,0 +1,341 @@
+
+
+.bg-main-color
+{
+    background-color:#c8af97 ;
+}
+.bg-main2-color
+{
+    background-color:#ccc1c1 ;
+}
+.bg-grey-color
+{
+    background-color: #f6f6f6;
+}
+.bg-blackgray
+{
+    background-color:#aba4a3;
+}
+.bg-bnafsg
+{
+    background-color: #8d1454;
+}
+.text-main-color
+{
+    color:#c8af97 ;
+}
+.logo 
+{
+    mix-blend-mode: multiply !important;
+}
+.bg-black
+{
+    background-color: black;
+}
+.bg-bink
+{
+    background-color: #ffaaa9;
+}
+/*------- start navbar section ------- */
+.logo-navbar
+{
+    width: 20%;
+    height: 15%;   
+}
+.navbar-icon
+{
+    font-size: 1.2em;
+}
+.icon-navbar-border
+{
+    border: solid 2px white;
+    border-radius: 50%;
+    transition: all 1s;
+}
+.icon-navbar-border:hover 
+{
+    border: solid 2px #8d1454;
+}
+.icon-navbar-border i
+{
+    transition: all 1s;
+}
+.icon-navbar-border:hover  i
+{
+    color: #8d1454 !important;  
+}
+
+
+
+
+
+.line
+{
+    width: 100%;
+    border: solid 1px ;
+}
+
+
+
+ *{
+    box-sizing: border-box;
+    
+}
+
+a
+{
+    cursor: pointer;
+}
+
+i
+{
+    color: wheat;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button{ cursor: pointer; }
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 11;
+
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222;
+    padding: 6px 50px;
+}
+ 
+header nav a{
+    color: #fff;
+    text-decoration: none;
+}
+header nav a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav a.cartCount{
+    padding: 10px 30px;
+    background: rgb(8, 12, 8);
+    border:  dotted 2px lime;
+}
+
+header nav a sup{
+    padding: 3px 7px;
+    background: gray;
+    border-radius: 50%;
+}
+
+main{
+    margin-top: 30px;
+    padding: 10px;
+}
+
+ main .container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+} 
+
+main .container .card{
+    border: solid 1px #eee;
+    position: relative;
+}
+
+main .container .card img{
+    width: 100%;
+    height: 250px;
+}
+
+main .container .card section{
+    background: #eee;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+main .container .card button.btnAdToCart{
+    background: none;
+    color: dodgerblue;
+    border-radius: 50%;
+    border: solid 1px dodgerblue;
+    font-size: 1.5em;    
+    padding: 7px 16px;
+    position: absolute;
+    right: 10px;
+    bottom: 50px;
+    box-shadow: 0px 2px 10px 0px rgba(8, 12, 8, .4);
+    transition: all .38s ease-in-out;
+    outline: none;
+
+}
+
+main .container .card button:hover{
+    background: dodgerblue;
+    color: #fff;
+}
+
+main .callout{
+    position: fixed;
+    top: 60px;
+    right: -100%;
+    bottom: 0;
+    width: 350px;
+    background: #eee;
+    z-index: 1;
+    box-shadow: 0 10px 20px 0 rgb(8, 12, 8);
+    transition: all .38s ease-in-out;
+}
+
+main .callout.open{
+right: 0;
+}
+
+
+main .callout .row:first-child{
+    height: calc(100vh - 210px);
+    overflow-y: auto;
+}
+
+main .callout .row:first-child .card{
+    display: grid;
+    grid-template-columns: auto 1fr  auto auto;
+    grid-gap: 10px;
+    border-bottom: solid 1px #ddd;
+}
+
+main .callout .row:first-child .card img{ 
+    width: 120px;
+    height: 100px;
+}
+
+main .callout .row:first-child .card section{ 
+    display: grid;
+    justify-content: space-between;
+}
+
+main .callout .row:first-child .card button.btnRemoveCartItem{ 
+    background: none;
+    color: red;
+    border: none;
+    padding: 0 20px;
+    font-size: 2rem;
+    outline: none;
+}
+
+main .callout .row:last-child{
+    background: #222;
+    color: #fff;
+    height: 150px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding: 10px;
+}
+
+main .callout .row:last-child section:first-child{
+    display: grid;
+}
+
+main .callout .row:last-child section:first-child .billAmt{
+    display: grid;
+    grid-gap: 10px;
+    font-size: 2em;
+}
+
+main .callout .row:last-child section:first-child{
+    color: #ddd;
+}
+
+main .callout .row:last-child section:last-child{
+    display: grid;
+    grid-gap: 10px;
+}
+
+main .callout .row:last-child section:last-child button.btnReset{
+    background: red;
+    color: #fff;
+    border: red;
+     margin:9px;
+}
+
+main .callout .row:last-child section:last-child button.btnCheckOut{
+    background: rgb(55, 173, 55);
+    color: #fff;
+    border: red;
+    margin: 9px;
+
+
+}
+
+main .callout .alert{
+    background-color: rgba(255, 75, 75);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+#footer ul
+{
+    font-size: 1rem;
+}
+#footer  .footer-list
+{
+    transform: all 1s;
+}
+#footer .footer-list:hover a
+{
+    color:#8d1454 !important;
+}
+#footer a
+{
+    text-decoration: none;
+}
+#footer .box-copyright
+{
+    margin: auto;
+    width: 14rem;
+}
+#footer img
+{
+    width: 90%;
+    height: 25%;
+    margin:auto ;
+}
+#footer i
+{
+    font-size: 1.8rem;
+    transform: all 1s;
+}
+#footer .buyicon:hover
+{
+    color:#8d1454 !important ;
+}
+#footer .twitter:hover
+{
+    color:#45c9e0 !important ;
+}
+#footer .facebook:hover
+{
+    color:blue !important ;
+}
+#footer .instagram:hover
+{
+    color:orange !important ;
+}
+#footer .pinterest:hover
+{
+    color:red !important ;
+}
