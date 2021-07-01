@@ -8,12 +8,15 @@
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!--//for-mobile-apps -->
-<!-- fontawesome -->
+ <!-- FONTAWESOME -->
+ <link rel="stylesheet" href="css/all.min.css">
 <!-- <link rel="stylesheet" href="css/all.min.css"> -->
 <!--Custom Theme files -->
 <link href="Gallery/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <link href="Gallery/css/style.css" rel="stylesheet" type="text/css" media="all" />
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/chat.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/specialNeeds.css" rel="stylesheet" type="text/css" media="all" />
 <link rel="stylesheet" href="Gallery/css/skitter.css">
 <!--//Custom Theme files -->
 <!--js-->
@@ -70,8 +73,8 @@ $(window).load(function() {
 				<div class="nav navbar-nav header-two-left">
 					<ul>
 						<li><a href="indexResearch.html" class="glyphicon glyphicon-search" aria-hidden="true"></a></li>
-						<li><a class="glyphicon glyphicon-headphones" aria-hidden="true"></a></li>
-						<li><a class="glyphicon glyphicon-user" aria-hidden="true"></a></li>		
+						<li><a href="contact.html" class="glyphicon glyphicon-headphones" aria-hidden="true"></a></li>
+						<li><a href="login.html" class="glyphicon glyphicon-user" aria-hidden="true"></a></li>		
 					</ul>
 				</div>
 				<div class="nav navbar-nav logo wow zoomIn animated" data-wow-delay=".7s">
@@ -81,7 +84,7 @@ $(window).load(function() {
 				</div>
 				<div class="nav navbar-nav navbar-right header-two-right">
 					<div class="header-right my-account">
-						<a href="#"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> CONTACT US</a>						
+						<a href="contact.html"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> CONTACT US</a>						
 					</div>
 					<div class="header-right cart">
 						<a href="#"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a>
@@ -707,7 +710,7 @@ $(window).load(function() {
             <div class="">
                 <h4 class="py-3 font-weight-normal  text-white">Customer Care</h4>
                 <ul class="list-group list-unstyled ">
-                    <li class="footer-list"><a href="aboutUs.html" class="text-white">Visit Us</a></li>
+                    <li class="footer-list"><a href="contact.html" class="text-white">Visit Us</a></li>
                     <li class="footer-list"><a href="aboutUs.html" class="text-white">Our Story</a></li>
                     <li class="footer-list"><a href="" class="text-white">Press</a></li>
                     <li class="footer-list"><a href="" class="text-white">Corporate Gifts</a></li>
@@ -764,6 +767,77 @@ $(window).load(function() {
             </div>
     </div>
 </footer>
+ <!-- chat box -->
+ <div class="wrapper">
+	<div class="parent">
+		<!-- chat -->
+		<div class="chat-box" id="chat-box">
+			<!-- <span class="close" onclick="closeChat()"><i class="far fa-times-circle"></i></span> -->
+			<span class="close"><i class="far fa-times-circle"></i></span>
+			<div class="avatar"></div>
+			<p class="username">MARCIA GARICIA</p>
+			<div class="dots">
+			<span class="dot"></span>
+			<span class="dot"></span>
+			<span class="dot"></span>
+			
+				
+		   
+			</div>
+			<div class="fooooorm">
+				<textarea  placeholder="Send Maria a message ..." id="msg"></textarea>
+				<!-- <button class="send-btn" onclick="sendMsg()">Send</button> -->
+				<button class="send-btn">Send</button>
+			</div>
+		  
+		</div>
+		  <!-- message button -->
+		  <!-- <div class="msg-btn" onclick="openMsgBox()">   -->
+		  <div class="msg-btn" id="msg-btn">  
+			<i class="fas fa-comment-alt" aria-hidden="true"></i>
+		</div>
+	</div>
+  </div>
+  <!-- chatbox end -->
+
+<!-- specialneeds -->
+    <div id="cogContainer" class="cogContainer">
+       <span id="spanContainer" class="">
+           <p class="hideText d-inline text-md-center px-1" id="hideText">Hide</p>
+        <i  class="fab fa-accessible-icon cogWheel pr-1" id="cogWheel"></i></span>
+        
+    </div>
+    <div id="handicapOptions" class="">
+        <section class="accessSec">
+            <p>Accessibility Menu</p>
+        </section>
+        <section class="row optionsSec">
+            <div class="col-md-6 py-md-5">
+                <div class="blockOne">
+                    <i class="fas fa-universal-access"></i>
+                    <span class="d-block">Option 1</span>
+                </div>
+                    <div class="blockTwo mt-md-5">
+                        <i class="fas fa-universal-access"></i>
+                        <span class="d-block">Option 2</span>
+                    </div>
+                
+            </div>
+            <div class="col-md-6 py-md-5">
+                <div class="blockThree">
+                    <i class="fas fa-universal-access"></i>
+                    <span class="d-block">Option 3</span>
+                </div>
+                <div class="blockFour mt-md-5">
+                    <i class="fas fa-universal-access"></i>
+                    <span class="d-block">Option 4</span>
+                </div>
+            </div>
+            
+        </section>
+    </div> 
+    <!-- specialneeds -->
+
 	<!--search jQuery-->
 	<script src="Gallery/js/main.js"></script>
 	<!--//search jQuery-->
@@ -787,5 +861,7 @@ $(window).load(function() {
     ================================================== -->
     <!--Placed at the end of the document so the pages load faster -->
     <script src="Gallery/js/bootstrap.js"></script>
+    <script src="js/chatBox.js"></script>
+    <script src="js/specialNeeds.js"></script>
 </body>
 </html>

@@ -1,17 +1,17 @@
 .cogContainer {
-    color: rgb(85, 82, 82);
+    color: #8D1454;
     position: fixed;
-    bottom: 42%;
+    bottom: 40%;
     right: 0;
     z-index: 3;
 }
 .hideText {
     color:white;
     font-size: 15px;
-    border: 2px solid #666666;
+    border: 2px solid #8D1454;
     border-radius: 10px;
     display:inline;
-    background-color: #666666;
+    background-color: #8D1454;
 }
 
 .hideText:hover {
@@ -24,7 +24,7 @@
     cursor: pointer;
 }
 .cogWheel{
-    color:#666666;
+    color:#8D1454;
     font-size: 40px;
 }
 #handicapOptions {
@@ -39,8 +39,8 @@
 }
 .accessSec {
     color: white;
-    background-color: #666666;
-    border: #666666 1px solid;
+    background-color: #8D1454;
+    border: #8D1454 1px solid;
     border-radius: 5px;
 }
 .accessSec p {
