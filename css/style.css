@@ -299,6 +299,8 @@
     color:red !important ;
 }
 /*------- end footer style-------*/
-.homeBackground {
-  
+.animationDiv {
+    position:fixed;
+    top: 0;
+    left: 0;
 }

@@ -1,4 +1,7 @@
-
+.heading-custom
+{
+    padding-top: 150px;
+}
 
 .bg-main-color
 {
@@ -67,48 +70,6 @@
 
 /*  */
 
-.form-content-us{
-    display: flex;
-   justify-content: center;
-   padding: 50px 0 70px;
-   width: 50%;
-   margin: auto;
-   }
-   
-   .name{
-       width: 350px;
-        height: 35px;
-         border-radius: 4px;
-         border: 1px solid gray;
-          margin-right: 20px;
-   }
-   
-   
-   
-   .email{
-   
-       width: 355px;
-        height: 35px;
-         border-radius: 4px;
-           border: 1px solid gray;
-   }
-   
-   .subject{
-   
-   
-       width: 730px;
-        height: 35px;
-         border-radius: 4px;
-           border: 1px solid gray;
-   }
-   .Message{
-   
-       width: 730px;
-        height: 90px;
-         border-radius: 4px;
-           border: 1px solid gray;
-   }
-   
    .btn-contect{
    
        padding: 13px 20px; 
