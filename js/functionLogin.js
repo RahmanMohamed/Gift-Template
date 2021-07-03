@@ -11,7 +11,7 @@ var loginArray=JSON.parse(localStorage.getItem('detailLog'));
         if (loginEmail.value == loginArray[i].email &&
             loginPassword.value == loginArray[i].password)
             {
-                window.location.assign('index.html');
+                window.location.assign('indexHome.html');
                 loginError.classList.remove('d-block');
                 loginError.classList.add('d-none');
             }
